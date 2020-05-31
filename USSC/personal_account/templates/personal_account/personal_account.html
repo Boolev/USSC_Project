@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel = "stylesheet" href = "{% static 'all_vehicles/CSS/reset.css' %}">
+    <link rel="stylesheet" href = "{% static 'all_vehicles/CSS/style.css' %}">
+    <script src="{% static 'all_employees/JS/Java.JS' %}"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo link">
+                    <img src="{% static 'all_employees/img/SVG/logo.svg' %}" alt="Нарушения" class="header_logo">
+                    </a>
+                </div>
+                <div class="header_smallHouse">
+                    <a href ="/" class = "header_smallHouse link">
+                    <img src = "{% static 'all_employees/img/SVG/oyBoy.svg' %}" alt="Личный кабинет" class="header_smallHouse">
+                    </a>
+                </div>                
+            </div>
+            <div class = "header_line"></div>
+            <nav class="buttons_list">
+                        <a class="button" href="">Нарушения</a>
+                    <a class="button" href="">Добавить<br/> сотрудника</br></a>
+                    <a class="button" href="">Добавить<br/>Т/С</a>
+                    <a class="button" href="">Все сотрудники</a>
+                    <a class="button" href="">Все транспортные<br/>
+                        средства</br></a>
+                    <a class="button" href="">Личный кабинет</a>
+                    <a class="button" href="">   Статус заявок</a>
+            </nav>
+    </header>
+    <main class="main_information">
+        <p class ="h10">Информация о подрядчике</p>
+        <div class="photo_info_buttons">
+            <div class="photo_column">
+                <button type = "submit"  class ="button__foto">
+                    <a href="#!" class="foto">
+                        <img src="{% static 'personal_account/img/SVG/фото.png' %}" alt="" class="foto">
+                    </a>
+                </button>
+            </div>
+            <div class="information_column">
+                <div class="text_column">
+                    <p class="contructor_info">Название организации</p>
+                    <p class="contructor_info">Контакты представителей</p>
+                    <p class="contructor_info">Логин</p>
+                    <button class="edit">Редактировать</button>
+                </div>
+            </div>
+            <div class="text_information_column">
+                <p class="text_contructor_info">ООО"Рандомная компания"</p>
+                <p class="text_contructor_info">rndcomp@cmrnd.rn<br>Иванов П.О.</br></p>
+                <p class="text_contructor_info1">RandomCompany</p>
+            </div>
+        </div>
+        <div class="inf_only_buttons">
+            <button type = "submit"  class ="button__foto">
+                <a href="#!" class="foto">
+                    <img src="{% static 'personal_account/img/SVG/contract.svg' %}" alt="" class="foto">
+                </a>
+            </button>
+            <button type = "submit"  class ="button__foto">
+                <a href="#!" class="foto">
+                    <img src="{% static 'personal_account/img/SVG/status.svg' %}" alt="" class="foto">
+                </a>
+            </button>
+            <button type = "submit"  class ="button__foto">
+                <a href="#!" class="foto">
+                    <img src="{% static 'personal_account/img/SVG/infoAboutPoints.svg' %}" alt="" class="foto">
+                </a>
+            </button>
+        </div>
+    </main>
+    
+</body>
+</html>

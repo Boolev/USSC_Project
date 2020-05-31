@@ -1,0 +1,100 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нарушения</title>
+    <link rel = "stylesheet" href = "{% static 'violations/CSS/reset.css' %}">
+    <link rel = "stylesheet" href = "{% static 'violations/CSS/style.css' %}"> 
+    <script src="{% static 'violations/JS/Java.JS' %}"></script> 
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo link">
+                    <img src="{% static 'violations/images/SVG/logo.svg' %}" alt="Нарушения" class="header_logo">
+                    </a>
+                </div>
+                <div class="header_smallHouse">
+                    <a href ="/" class = "header_smallHouse link">
+                    <img src = "{% static 'violations/images/SVG/oyBoy.svg' %}" alt="Личный кабинет" class="header_smallHouse">
+                    </a>
+                </div>                
+            </div>
+            <div class = "header_line"></div>
+            <nav class="buttons_list">
+                        <a class="button" href="#!">Нарушения</a>
+                    <a class="button" href="#!">Добавить<br/> сотрудника</br></a>
+                    <a class="button" href="#!">Добавить<br/>Т/С</a>
+                    <a class="button" href="#!">Все сотрудники</a>
+                    <a class="button" href="#!">Все транспортные<br/>
+                        средства</br></a>
+                    <a class="button" href="#!">Личный кабинет</a>
+                    <a class="button" href="#!">   Статус заявок</a>
+            </nav>
+    </header>
+    <p class ="h1">Нарушения моих сотрудников</p>
+    <main class="main">
+        <section class="section1">
+            <form class="form-control" method="get">
+                <input class="main_finder" type="search" placeholder="Найти сотрудника по ФИО..." name="search"></input>
+                <button class="find" type="submit"></button>
+            </form>
+        </section>
+        <div class="section2">
+            <div class="tabs">
+                <nav class="tabs_items">
+                    <a href="#tab_01" class="tabs_item">Все нарушения</a>
+                    <a href="#tab_02" class="tabs_item">Статистика</a>
+                </nav>
+                <div class="tabs_body">
+                        <div id="tab_01" class="tabs_block">
+                        <div class="header_filters">Фильтрация нарушений</div>
+                            <form method="get">
+                                <div class="connector">{{ myFilter.form }}</div>
+                                    <nav class="accept_or_skip">
+                                        <button href="#!" class="butt1" type="submit">Применить</button>
+                                        <button href="#!" class="butt2" type="submit">Сбросить</button>
+                                    </nav>
+                            </form>
+                                <div class="skroll">
+                                    {% if violation_list %}
+                                        {% for violation in violation_list %}
+                                            <button href="#!" class="info">
+                                                <img src="{% static 'violations/images/Fufel.jpg' %}" alt="Нарушение" class="nar">
+                                                    <div class="inf_nar">
+                                                        <div id="#!" class="nar1">{{ violation.violator_FIO }}</div>
+                                                        <div id="#!" class="nar1">{{ violation.type }}</div>
+                                                        <div id="#!" class="nar1">{{ violation.violator_profession }}</div>
+                                                        <div id="#!" class="nar1">{{ violation.object_name }}</div>
+                                                        <div id="#!" class="nar1">{{ violation.value }}</div>
+                                                        <div id="#!" class="nar1">{{ violation.date }}</div>
+                                                    </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p>Нет нарушений</p>
+                                    {% endif %}
+                                        </button>
+                                </div>
+                        </div>
+                        <div id="tab_02" class="tabs_block">
+                            Фильтрация нарушений
+                            <div class="filters2">
+                                <input type="checkbox" id="chkddl1" class="by_type_of_nar" onclick ="Enableddl1(this)">По типу нарушения</input>
+                                    <select id="ddl1" disabled="disabled">
+                                        <option value="" selected Disabled>Выберете из списка</option>
+                                        <option>Селекшн 1</option>
+                                        <option>Селекшн 2</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

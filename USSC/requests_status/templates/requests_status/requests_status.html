@@ -1,0 +1,200 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статус заявок</title>
+    <link rel = "stylesheet" href = "{% static 'all_vehicles/CSS/reset.css' %}">
+    <link rel="stylesheet" href = "{% static 'all_vehicles/CSS/style.css' %}">
+    <script src="{% static 'all_employees/JS/Java.JS' %}"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo link">
+                    <img src="{% static 'all_employees/img/SVG/logo.svg' %}" alt="Нарушения" class="header_logo">
+                    </a>
+                </div>
+                <div class="header_smallHouse">
+                    <a href ="/" class = "header_smallHouse link">
+                    <img src = "{% static 'all_employees/img/SVG/oyBoy.svg' %}" alt="Личный кабинет" class="header_smallHouse">
+                    </a>
+                </div>                
+            </div>
+            <div class = "header_line"></div>
+            <nav class="buttons_list">
+                        <a class="button" href="">Нарушения</a>
+                    <a class="button" href="">Добавить<br/> сотрудника</br></a>
+                    <a class="button" href="">Добавить<br/>Т/С</a>
+                    <a class="button" href="">Все сотрудники</a>
+                    <a class="button" href="">Все транспортные<br/>
+                        средства</br></a>
+                    <a class="button" href="">Личный кабинет</a>
+                    <a class="button" href="">   Статус заявок</a>
+            </nav>
+    </header>
+    <p class ="h1">Просмотреть статус моих заявок</p>
+        <main class="main">
+            <section class="section1">
+                <form>
+                    <input type="text" placeholder="Поиск...">
+                    <button class="find" type="submit"></button>
+                </form>
+            </section>
+            <section class="section3">
+                <div class="background_of_filters">
+                    <div class="headline">Фильтрация заявок</div>
+                    <div class="filters_of_status">
+                        <p1 class="time_of_request">Время подачи заявки (с/по)</p1>
+                        <p2 class="appointment_of_request">Назначение заявки</p2>
+                    </div>
+                    <nav class="all_Buttons_for_requests">
+                        <div class="dropdown9">
+                            <button onclick="myFunction1()" class="dropbtn9">Сотрудники и т/с</button>
+                            <div id="myDropdown4" class="dropdown-content4">
+                                <button class="btn" onclick="filterSelection('all_professions')"> Показать все</button>
+                                <button class="btn" onclick="filterSelection('locksmith')"> Легковой автомобиль</button>
+                                <button class="btn" onclick="filterSelection('driver')"> Погрузочный автомобиль</button>
+                                <button class="btn" onclick="filterSelection('manager')"> Кран</button>
+                                <button class="btn" onclick="filterSelection('courier')"> Экскаватор</button>
+                        </div>
+                        <input type="date" class="input5"></input>
+                        <input type="date" class="input6"></input>
+                        <div class="dropdown10">
+                            <button onclick="myFunction2()" class="dropbtn8">Новые заявки</button>
+                            <div id="myDropdown5" class="dropdown-content5">
+                                <button class="btn" onclick="filterSelection('all_objects')"> Показать все</button>
+                                <button class="btn" onclick="filterSelection('object1')"> Объект№1</button>
+                                <button class="btn" onclick="filterSelection('object2')"> Объект№2</button>
+                                <button class="btn" onclick="filterSelection('object3')"> Объект№3</button>
+                                <button class="btn" onclick="filterSelection('object4')"> Объект№4</button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <div class="section2">
+                <div class="tabs">
+                    <nav class="tabs_items">
+                        <a href="#tab_03" class="tabs_item_requests">Неодобренные</a>
+                        <a href="#tab_04" class="tabs_item_requests">Одобренные</a>
+                        <a href="#tab_05" class="tabs_item_requests">На рассмотрении</a>
+                    </nav>
+                    <div class="tabs_body_requests">
+                        <div id="tab_03" class="tabs_block_requests">
+                            <div class="skroll_of_all_requests">
+                                <button href="#!" class="info_about_all_requests">
+                                    <img src="{% static 'all_employees/img/mxmiyRreeRM.jpg' %}" alt="Нарушение" class="nar">
+                                    <div class="inf_request">
+                                        <div class="filterDiv request1">Иванов Иван Иванович</div>
+                                        <div class="filterDiv request3">Менеджер</div>
+                                        <div class="filterDiv request4">Объект№3</div>
+                                        <div class="filterDiv request5">03.02.2000</div>
+                                    </div>
+                                </button>
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                            </div>
+                        </div>
+                        <div id="tab_04" class="tabs_block_requests">
+                            <div class="skroll_of_all_requests">
+                                <button href="#!" class="info_about_all_requests">
+                                    <img src="{% static 'all_employees/img/mxmiyRreeRM.jpg' %}" alt="Нарушение" class="nar">
+                                    <div class="inf_request">
+                                        <div class="filterDiv request1">Иванов Иван Иванович</div>
+                                        <div class="filterDiv request3">Е527УВ</div>
+                                        <div class="filterDiv request4">Камаз</div>
+                                        <div class="filterDiv request5">Погрузочный автомобиль</div>
+                                    </div>
+                                </button>
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                            </div>
+                        </div>
+                        <div id="tab_05" class="tabs_block_requests">
+                            <div class="skroll_of_all_requests">
+                                <button href="#!" class="info_about_all_requests">
+                                    <img src="{% static 'all_employees/img/mxmiyRreeRM.jpg' %}" alt="Нарушение" class="nar">
+                                    <div class="inf_request">
+                                        <div class="filterDiv request1">Иванов Иван Иванович</div>
+                                        <div class="filterDiv request3">Е527УВ</div>
+                                        <div class="filterDiv request4">Камаз</div>
+                                        <div class="filterDiv request5">Погрузочный автомобиль</div>
+                                    </div>
+                                </button>
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                                <button href="#!" class="info"></button>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все сотрудники</title>
+    <link rel = "stylesheet" href = "{% static 'all_employees/CSS/reset.css' %}">
+    <link rel="stylesheet" href = "{% static 'all_employees/CSS/style.css' %}">
+    <script src="{% static 'all_employees/JS/Java.JS' %}"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo link">
+                    <img src="{% static 'all_employees/img/SVG/logo.svg' %}" alt="Нарушения" class="header_logo">
+                    </a>
+                </div>
+                <div class="header_smallHouse">
+                    <a href ="/" class = "header_smallHouse link">
+                    <img src = "{% static 'all_employees/img/SVG/oyBoy.svg' %}" alt="Личный кабинет" class="header_smallHouse">
+                    </a>
+                </div>                
+            </div>
+            <div class = "header_line"></div>
+            <nav class="buttons_list">
+                        <a class="button" href="">Нарушения</a>
+                    <a class="button" href="">Добавить<br/> сотрудника</br></a>
+                    <a class="button" href="">Добавить<br/>Т/С</a>
+                    <a class="button" href="">Все сотрудники</a>
+                    <a class="button" href="">Все транспортные<br/>
+                        средства</br></a>
+                    <a class="button" href="">Личный кабинет</a>
+                    <a class="button" href="">   Статус заявок</a>
+            </nav>
+    </header>
+    <p class="h1">Все сотрудники</p>
+    <main class="main">
+        <section class="section1">
+            <form class="form-control2" method="get">
+                <input class="employee_finder" type="text" placeholder="Найти сотрудника по ФИО..." name="search"></input>
+                <button class="find" type="submit"></button>
+            </form>
+        </section>
+        <section class="section3">
+            <div class="background_of_filters">
+                <div class="headline">Фильтрация заявок</div>
+                <form method="get">
+                                <div class="connector">{{ myFilter.form }}</div>
+                                    <nav class="accept_or_skip">
+                                        <button href="#!" class="butt1" type="submit">Применить</button>
+                                        <button href="#!" class="butt2" type="submit">Сбросить</button>
+                                    </nav>
+                            </form>
+                    <div class="skroll_of_all_empl">
+                        {% if employees_list %}
+                            {% for employee in employees_list %}
+                                            <button href="#!" class="info">
+                                                <img src="{% static 'all_employees/img/mxmiyRreeRM.jpg' %}" alt="Нарушение" class="nar">
+                                                    <div class="inf_nar">
+                                                        <div id="#!" class="nar1">{{ employee.first_name }} {{ employee.last_name }} {{ employee.patronymic }}</div>
+                                                        <div id="#!" class="nar1">{{ employee.profession }}</div>
+                                                        <div id="#!" class="nar1">{{ employee.object_name }}</div>
+                                                        <div id="#!" class="nar1">{{ employee.violation_points }}</div>
+                                                    </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p>Нет сотрудников</p>
+                                    {% endif %}
+                        </button>
+                    </div>
+            </div>
+            </div>
+        </section3>
+
+</div>
+</div>
+</body>
+</html>

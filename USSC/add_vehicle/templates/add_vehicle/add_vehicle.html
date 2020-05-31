@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить транспортное средство</title>
+    <link rel="stylesheet" href="{% static 'add_vehicle/CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'add_vehicle/CSS/reset.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo link">
+                    <img src="{% static 'add_vehicle/img/SVG/logo.svg' %}" alt="Нарушения" class="header_logo">
+                    </a>
+                </div>
+                <div class="header_smallHouse">
+                    <a href ="/" class = "header_smallHouse link">
+                    <img src = "{% static 'add_vehicle/img/SVG/oyBoy.svg' %}" alt="Личный кабинет" class="header_smallHouse">
+                    </a>
+                </div>                
+            </div>
+            <div class = "header_line"></div>
+            <nav class="buttons_list">
+                <a class="button" href="#!">Нарушения</a>
+                <a class="button" href="#!">Добавить<br/> сотрудника</br></a>
+                <a class="button" href="#!">Добавить<br/>Т/С</a>
+                <a class="button" href="#!">Все сотрудники</a>
+                <a class="button" href="#!">Все транспортные<br/>
+                    средства</br></a>
+                <a class="button" href="#!">Личный кабинет</a>
+                <a class="button" href="#!">   Статус заявок</a>
+            </nav>
+    </header>
+    <div class="wrapper2">
+        <h1 class="h1">Добавить информацию о транспротном средстве</h1>
+        <div class="section__info">
+            <div class="section__1">
+                <button type = "submit"  class ="button__foto">
+                    <a href="/" class="foto">
+                        <img src="{% static 'add_vehicle/img/SVG/transport.svg' %}" alt="" class="foto">
+                    </a>
+                </button>
+                
+                <p class="podskazka">Подсказка</p>
+                <p class="podskazka__text">
+                    Все файлы можно загружать <br>
+                    в форматах pdf, docs.<br> 
+                    На каждое после загрузки <br> 
+                    не более M  количества <br>
+                    файлов. Фото в форматах<br>
+                    png, jpeg, рамзер<br>
+                    не должен превышать N МБ.
+                </p>
+
+                <button type = "submit"  class ="delete__button">
+                    Удалить т/с      
+                </button>
+                <br>
+                <button type = "submit"  class ="view__and__send__button">
+                    Посмотреть <br>
+                    и отправить <br>
+                    заявки
+                </button>   
+            </div>
+            <div class="section__2__h2">
+                <h2 class="h2">Основная инфонмация</h2>
+                <div class="section__2__text__field3">
+                    <div class="section__2__text1">
+                        <p class="ts">Тип т/с</p>
+                        <p class="ts">Номер т/с</p>                                
+                        <p class="ts">Объект</p>
+                        <p class="ts">Марка т/с</p>
+                        <p class="ts">Скан тех. осмотра документа</p>
+                        <p class="ts">Скан страховки</p>                
+                    </div>
+                    <div class="section__2__field">
+                            <div class="section__2__field1"> 
+                            <button type = "submit"  class ="field_ts">
+                                Выбрать...
+                            </button>                    
+                            <input type="text" class="field_ts">
+                            <button type = "submit"  class ="field_ts">
+                                Выбрать...
+                            </button>
+                            <input type="text" class="field_ts">
+                            <button type = "submit"  class ="field_ts">
+                                Обзор...
+                            </button>  
+                            <button type = "submit"  class ="field_ts">
+                                Обзор...
+                            </button>
+                        </div>                                                         
+                    </div>                  
+                </div>    
+                
+                                       
+            </div>
+            <div class="section__3__h3">
+                <h2 class="h2">Информация о владельце</h2>
+                <div class="section__3__text__field">
+                    <div class="section__3__text">
+                        <p class="owner_ts">Тип владельца или <br>
+                            название организации
+                        </p>
+                        <p class="owner_ts">Информация о владельце</p>               
+                    </div>
+                    <div class="section__3__field">
+                        <input type="text" class="field_ts"><br>
+                        <input type="text" class="field_ts"><br>
+                    </div>                  
+                </div>
+                <div class="comment2">
+                    <h2 class="h2">Комментарий</h2>
+                    
+                    <input type="text" class="text__comment"><br>                   
+                        <div class="button__save__dobavit">
+                            <button type = "submit"  class ="save__button">
+                                Сохранить
+                            </button> <br>
+                            <button type = "submit"  class ="dobavit__button">
+                                Добавить сотрудника
+                            </button>
+                        </div>        
+                </div>  
+                                       
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

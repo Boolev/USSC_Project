@@ -1,0 +1,170 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить сотрудника</title>
+    <link rel="stylesheet" href="{% static 'add_employee/CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'add_employee/CSS/reset.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo link">
+                    <img src="{% static 'add_employee/img/SVG/logo.svg' %}" alt="Нарушения" class="header_logo">
+                    </a>
+                </div>
+                <div class="header_smallHouse">
+                    <a href ="/" class = "header_smallHouse link">
+                    <img src = "{% static 'add_employee/img/SVG/oyBoy.svg' %}" alt="Личный кабинет" class="header_smallHouse">
+                    </a>
+                </div>                
+            </div>
+            <div class = "header_line"></div>
+            <nav class="buttons_list">
+                <a class="button" href="violations">Нарушения</a>
+                <a class="button" href="">Добавить<br/> сотрудника</br></a>
+                <a class="button" href="3_add_transport.html">Добавить<br/>Т/С</a>
+                <a class="button" href="4_all_employee.html">Все сотрудники</a>
+                <a class="button" href="5_all_transport.html">Все транспортные<br/>
+                    средства</br></a>
+                <a class="button" href="6_personal_account.html">Личный кабинет</a>
+                <a class="button" href="7_status_of_requests.html">   Статус заявок</a>
+            </nav>
+    </header>
+    <div class="wrapper2">
+        <h1 class="h1">Добавить информацию о сотруднике</h1>
+        <div class="section__info">
+            <div class="section__1">
+                <button type = "submit"  class ="button__foto">
+                    <a href="/" class="foto">
+                        <img src="{% static 'add_employee/img/SVG/фото.png' %}"" alt="" class="foto"> 
+                    </a>
+                </button>
+                
+                <p class="podskazka">Подсказка</p>
+                <p class="podskazka__text"> 
+                    Все файлы можно загружать <br>
+                    в форматах pdf, docs.<br> 
+                    На каждое после загрузки <br> 
+                    не более M  количества <br>
+                    файлов. Фото в форматах<br>
+                    png, jpeg, рамзер<br>
+                    не должен превышать N МБ.
+                </p>
+
+                <button type = "submit"  class ="delete__button">
+                    удалить сотрудника
+                </button>
+                <br>
+                <button type = "submit"  class ="view__and__send__button">
+                    Посмотреть <br>
+                    и отправить <br>
+                    заявки
+                </button>   
+            </div>
+            <div class="section__2__h2">
+                <h2 class="h2">Основная инфонмация</h2>
+                <div class="all_names_and_buttons">
+                <div class="section__2__text__field">
+                    <div class="section__2__text1">
+                        <p class="name">Фамилия</p>
+                        <p class="name">Имя</p>
+                        <p class="name">Отчество</p>
+                        <p class="name">Дата рождения</p>
+                        <p class="name">Телефон</p>
+                        <p class="name">Эл. почта</p>
+                        <p class="name">Объект</p>
+                    </div>
+
+                    <div class="section__2__text2">
+                        <p class="name">Профессия</p>
+                        <p class="name">Документ</p> 
+                        <p class="name">Номер документа</p>
+                        <p class="name">Скан документа</p>
+                        <p class="name">Скан страховки</p>
+                        <p class="name">Скан водит. прав</p>   
+                    </div>
+                                       
+                    </div>
+                    <div class="section__2__field"> 
+                        <div class="section__2__field1">                                   
+                            <input type="text"  name="name"  class="name_field">
+                            <input type="text" class="name_field">
+                            <input type="text" class="name_field">                                                
+                            <input type="text" class="name_field">
+                            <input type="text" class="name_field">
+                            <input type="text" class="name_field"> 
+                            <div class="name_field1">
+                                <button type = "submit"  class ="add">
+                                    Выбрать...
+                                </button>   
+                                <button type = "submit"  class ="choose">
+                                    <img src="./img/svg/Добавить сотрудника/+++.svg" alt="">Добавить
+                                </button>
+                            </div>
+                        <div class="section__2__field2">                  
+                            
+                            <button type = "submit"  class ="name_field">
+                                Выбрать...
+                            </button>
+                            <button type = "submit"  class ="name_field">
+                                Выбрать...
+                            </button>                        
+                            <input type="text" class="name_field">
+                            <button type = "submit"  class ="name_field">
+                                Обзор...
+                            </button>
+                            <button type = "submit"  class ="name_field">
+                                Обзор...
+                            </button>
+                            <button type = "submit"  class ="name_field">
+                                Обзор...
+                            </button>     
+                        </div> 
+                    </div>                  
+                </div>    
+            </div>
+                                       
+            </div>
+            <div class="section__3__h3">
+                <h2 class="h2">Личное транспортное средство</h2>
+                <div class="section__3__text__field">
+                    <div class="section__3__text">
+                        <p class="text_private_car">Тип т/с</p>
+                        <p class="text_private_car">Номер т/с</p>
+                        <p class="text_private_car">Марка т/с</p>
+                        <p class="text_private_car">Скан страховки</p>                 
+                    </div>
+                    <div class="section__3__field">
+                        <button type = "submit"  class ="field">
+                            Выбрать...
+                        </button><br>
+                        <input type="text" class="field"><br>
+                        <input type="text" class="field"><br>
+                        <button type = "submit"  class ="field">
+                            Обзор...
+                        </button> 
+                       
+                    </div>                  
+                </div>
+                <div class="comment">
+                <h4 class="h2">Комментарий</h4>                    
+                <input type="text" class="text__comment">                   
+                    <div class="button__save__dobavit">
+                        <button type = "submit"  class ="save__button">
+                            Сохранить
+                        </button> <br>
+                        <button type = "submit"  class ="dobavit__button">
+                            Добавить сотрудника
+                        </button>
+                    </div>        
+                </div>                  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

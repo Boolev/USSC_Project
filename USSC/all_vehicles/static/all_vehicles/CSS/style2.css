@@ -1,0 +1,591 @@
+html{
+  box-sizing: border-box;
+  
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+  font-family: 'ProximaNova';
+  font-style: normal;
+}
+
+.body{
+  font-family: 'ProximaNova';
+  font-style: normal;
+  
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.wrapper{
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 700;
+
+  margin-top: 120px;
+  width: 80%;
+  margin-left: 10%;
+  border: 2px solid red;
+  margin-bottom: 3%;
+ 
+}
+/* fonts start */
+
+.h1{
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.h2{
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+p{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22p
+}
+/* fonts end */
+
+/* login start */
+.background{
+  position: fixed;
+  width: 100%;
+  height: 200%;
+  background-color:#5C5C5C;
+  
+}
+
+.intro{
+  position: static;
+  
+  height: 100%;
+  margin-left: 300px;
+  background: url(../img/svg/login/картиночка.svg) no-repeat;
+  margin-right: 0px;
+}
+
+.white{
+  margin: 0 auto;
+  position: absolute;
+  width: 1138px;
+  height: 608px;
+  left: 391px;
+  top: 150px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 auto;
+
+}
+
+.white__wrapper{
+  padding-left: 350px;
+  margin: 0 auto;
+}
+
+.Avtorizaciya{
+  padding-top: 47px;
+  margin: 0 auto;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+
+  color: #303030;
+}
+
+.login{   
+  position: static;
+  padding-top: 43px;
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;    
+}
+
+.password{
+  position: static;
+  padding-top: 43px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.prompt{
+  position: static;
+  margin-top: 12px;
+  padding-left: 304px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #303030
+}
+
+
+
+.input__login__field{
+  position: static;
+  background-color: transparent;
+  background-color: #EEEEEE;
+  border-radius: 10px 10px 10px 10px;
+}
+
+
+.input__password__field{
+  position: static;
+  background-color: transparent;
+  background-color: #EEEEEE;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.input__button{
+  position: static;
+  margin-top: 12px;
+  width: 246px;
+  height: 49px;
+  
+  background: #303030;
+  border-radius: 10px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FB9531
+}
+/* login end */
+
+/* cap start */
+/*header style starts */
+.header{
+  background-color: #303030;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 15%;
+}
+.header_logo{
+  width: 18%;
+  height: 18%;
+  margin-top: 3px;
+  
+  position: relative;
+}
+.header_smallHouse{
+  width: 22px;
+  height: 15%;
+  margin-top: 3px;
+  
+}
+.header_line{
+  margin-top: 2px;
+  height:10px;
+  width: 95%;
+  background-color: #5C5C5C;
+  position: relative;
+}
+.buttons_list{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15%;
+    
+}
+.button{
+  font-family: 'ProximaNova';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70%;
+  line-height: 15px;
+  color: white;
+  text-decoration: none;  
+  padding-bottom: 1px;
+  padding-top: 10px;
+  padding-left: 4.9%;
+  padding-right: 4%;
+}
+.button:hover, .button:focus, .button:active{
+  background-color: #5C5C5C;     
+}
+p{
+  position: static;
+  margin-left: 13.5%;
+  margin-top: 120px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 44px;
+  color: #303030;
+}
+/*header style ends */
+/* cap end */
+
+/* add start */
+
+.section__info{
+  margin-top: 20px;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: row;
+  min-height: 700px;
+  
+}
+.button__foto{
+  border: 0;
+  
+  background-color: white;
+  
+  border-radius: 10px;
+  padding: -50px;
+}
+
+.section__1{
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+
+.section__2__text__field{
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+}
+.input__name{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.section__3__h3{
+  border: 2px solid grey; 
+  min-height: 700px;
+}
+.section__3__text__field{
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22p;
+}
+.name{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.section__2__field{
+  display: flex;
+  flex-direction: column;
+
+}
+.name_field{
+  width: 190px;
+  height: 20px;
+  left: 643px;
+  top: 416px;
+  border: none;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+.object_list{
+  width: 190px;
+  height: 22px;
+  left: 643px;
+  top: 736px;
+  border: none;
+  background: #EEEEEE;
+  border-radius: 5px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+
+}
+.section__2__text{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22p;
+}
+.date{ 
+  font-size: 18px;
+  line-height: 22p;
+}
+
+.phone{
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.document{
+  margin-top: 24px;
+}
+
+.object{
+  margin-top: 29px;
+  margin-bottom: 47px;
+}
+
+
+.document{
+  margin-bottom: 17px;
+  margin-top: 30px;
+}
+.scan__document{
+  margin-top: 9px;
+  margin-bottom: 13px;
+}
+.scan__rights{
+  margin-top: 12px;
+}
+
+.comment{
+  border: 2px solid pink;
+  margin-right: 0px;
+  margin-bottom: 0px; 
+  
+}
+.text_private_car{
+  
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+.view__and__send__button{
+  position: static;
+  margin-top: 10px;    
+  width: 208px;
+  height: 94px;   
+  top: 883px;
+  background: #5C5C5C;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;  
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center; 
+  color: #FFFFFF;
+}
+.add__button{
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 13px; 
+  margin-bottom: 15px; 
+}
+.delete__button{
+  position: static;
+  margin-top: 30px;
+  width: 208px;
+  height: 34px;
+  background-color: white;
+  border: 1px solid #5C5C5C;
+  border-color: #5C5C5C;
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #5C5C5C;
+  
+  margin-top: 112px;
+}
+
+
+
+.save__button{
+  margin-top: 35px;
+  width: 199px;
+  height: 40px;
+  background: #FFAE5F;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+ 
+  color: #FFFFFF;   
+  border: none; 
+}
+
+.dobavit__button{
+  width: 199px;
+  height: 40px;
+  left: 1488px;
+  top: 923px;
+  
+  background: #5C5C5C;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; 
+  
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px; 
+  color: #FFFFFF;
+  
+  line-height: 24px;
+  border: none;
+}
+
+.text__comment{
+  position: absolute;
+  max-width: 580px;
+  height: 95px;
+  left: 1107px;
+  top: 739px;
+  background: #EEEEEE;
+  border-radius: 10px;
+  border: none;
+  
+}
+
+.button__save__dobavit{
+  
+  padding-left: 379px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 2px solid orangered;
+  justify-content: flex-end;
+}
+
+.section__2__button{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* add end */
+
+/* add_ts start */
+
+.number_ts{
+  margin-bottom: 28px;
+}
+
+.type_ts{
+  margin-bottom: 32px;
+}
+
+.mark_ts{
+  margin-top: 29px;
+  margin-bottom: 16px;
+}
+.scan__insurance_ts{
+  margin-top: 29px;
+}
+.owner_ts{
+  margin-bottom: 27px;
+}
+.owner_ts_field{
+  margin-top: 17px;
+  width: 190px;
+  height: 20px;
+  left: 643px;
+  top: 416px;
+  border: none;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-bottom: 27px;
+}
+
+/* add_ts end */
+
+/* all start */
+/* all end */
+
+/* personal_area start */
+.section__2__h2{
+  border: 2px solid orangered;
+  margin-left: 50px;
+  margin-right: 190px;
+  min-width: 400px;
+}
+
+/* personal_area end */
+
+
+/* Кнопки, списки, поля */
+
+.list{
+  width: 190px;
+  height: 22px;
+  left: 643px;
+  top: 736px;
+  border: none;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 27px;
+  background:  #EEEEEE url(/img/svg/Добавить_Сотрудника/стрелка.svg) no-repeat center right;
+  padding-right: 5px;
+}
+/* identical to box height */
+
+.scan{
+  width: 190px;
+  height: 22px;
+  left: 643px;
+  top: 886px;
+  border: none;
+  background: #EEEEEE;
+  border-radius: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 27px;
+}
+
+.field{
+  width: 190px;
+  height: 20px;
+  left: 643px;
+  top: 416px;
+  border: none;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-bottom: 27px;
+}
